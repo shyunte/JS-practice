@@ -18,6 +18,6 @@ let days =['월','화','수'];
     day.push('THU');
     day.unshift("SUN");
 
-    for(let x of day){
+    for(let x of day){                  // x는 임의대로 변수명을 기입해도 된다.
         console.log(x);
     }
