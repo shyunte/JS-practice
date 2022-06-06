@@ -83,85 +83,86 @@ let days =['월','화','수'];
 }
 
 {
-  console.log("--------------------------------------------------------");
-  console.log("|                       filter(fn)                      |");
-  console.log("--------------------------------------------------------");
+console.log("--------------------------------------------------------");
+console.log("|                       filter(fn)                      |");
+console.log("--------------------------------------------------------");
 
   // filter는 find와 사용 방법은 같다, 만족하는 모든 요소를 배열로 반환한다.
 
-  let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
+let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
 
-  const result = arr.filter((num) => {
+const result = arr.filter((num) => {
         return num%2 ===0;
-  });
+});
 
-  console.log(result);
+console.log(result);
 }
 
 
 {
-  console.log("--------------------------------------------------------");
-  console.log("|                       map(fn)                         |");
-  console.log("--------------------------------------------------------");
-  
+console.log("--------------------------------------------------------");
+console.log("|                       map(fn)                         |");
+console.log("--------------------------------------------------------");
+
   // 함수를 받아 특정기능을 시행하고 새로운 배열로 반환
 
-  let user = [
+let user = [
     { name: "shyun", age: 40 },
     { name: "yoon", age: 15 },
     { name: "gwang", age: 34 },
-  ];
+];
 
-  let newUser= user.map((user, index) =>{
+let newUser= user.map((user, index) =>{
     return Object.assign({},user,{
         id : index + 1,
         isAdult : user.age>19,
     });
-  });
-  
-  console.log(newUser);
+});
+
+console.log(newUser);
 
 
 
 }
 
 {
-  console.log("--------------------------------------------------------");
-  console.log("|                         join                        |");
-  console.log("--------------------------------------------------------");  
+
+console.log("--------------------------------------------------------");
+console.log("|                         join                        |");
+console.log("--------------------------------------------------------");  
 
   //배열을 합쳐 문자열로 반환
 
-  let arr = [ "안뇽","나는", "현뚱이야"];
-  let result = arr.join(" ");
+let arr = [ "안뇽","나는", "현뚱이야"];
+let result = arr.join(" ");
 
-  console.log(result);
+console.log(result);
 
-  
+
 }
 
 {
-  console.log("--------------------------------------------------------");
-  console.log("|                         split                         |");
-  console.log("--------------------------------------------------------");  
+console.log("--------------------------------------------------------");
+console.log("|                         split                         |");
+console.log("--------------------------------------------------------");  
 
   //문자열을 나눠서 배열로 만들어 줌  split("") 안에 들어가느 기준으로 놔눠서 배열로 만들어줌
 
-  const user = "shyun, yoon,gwang,Tom";
-  const result = user.split(",");
-  console.log(result);
+const user = "shyun, yoon,gwang,Tom";
+const result = user.split(",");
+console.log(result);
 
-  let str = "Hello my name is shyun.!";
-  const result2 = str.split("");
-  console.log(result2);
+let str = "Hello my name is shyun.!";
+const result2 = str.split("");
+console.log(result2);
 
 
 }
 
 {
-     console.log("--------------------------------------------------------");
-     console.log("|                     Array.isArray                     |");
-     console.log("--------------------------------------------------------"); 
+    console.log("--------------------------------------------------------");
+    console.log("|                     Array.isArray                     |");
+    console.log("--------------------------------------------------------"); 
         //array인지 구분할때,  typeof로 구분이 안될대 사용함
 
         let user ={
