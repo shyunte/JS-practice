@@ -9,6 +9,6 @@ fs.writeFile('./writeMe.txt', '글이  입력됩니다.')
         console.log(data);
         console.log(data.toString());
     })
-    .catch((err) =>{
+    .catch((err) => {
         throw err;
     })
