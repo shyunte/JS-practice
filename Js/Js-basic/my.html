@@ -1,4 +1,4 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -31,7 +31,7 @@
             $box.style.transform = `translate3d(${offset.x}px, ${offset.y}px, 0)`;
         };
         //ㅡmouse 이벤트가 발생하면 드래글 시작 시점의 마우스 포인터 좌표를 저장한다.
-        $box.addEventListener('mousemove', e => {
+        $box.addEventListener('mousedown', e => {
             //ㅇ이동거리를 계산하기위해서 mousedown 이벤트가 발생(드래그를 시작)하면 드래그 시작 시점의
             //한 번이상 드래그로 이동한 경우 move에서 translated3d으로 
             //이동한 상태이므로 offset.x와 offset.y를 빼줌
