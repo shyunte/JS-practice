@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <ul id="fruit">
+        <li class="apple">Apple</li>
+        <li class="banana">Banana</li>
+        <li class="orange">Orange</li>
+    </ul>
+</body>
+<script>
+    const $fruits = document.getElementById('fruit');
+
+    console.log($fruits.childeNodes);  /* 텍스트 노드를 포함하여 반환함 */
+    console.log($fruits / children);      /*요소 노드만 포함하여 반환한다  li.apple la.banana li.irange*/
+    console.log($fruits.firstChild);   /*첫번째 노드를 탐색 텍스트노드 포함*/
+    console.log($fruits.firstElementChild); /* 첫번째 요소 노드만 포함*/
+</script>
+
+</html>
